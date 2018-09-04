@@ -15,6 +15,15 @@ Place all audio files in the same directory as the `practice.py` file, or organi
   * `thankYou.mp3`
   * `ohReally_isThatSo.mp3`
   
+### Commands
+
+When prompted to type a guess, precede your response with a "." to invoke one of the following available commands:
+
+* `skip`: Skips the audio snippet that was last played, and reveals all acceptable answers for that snippet.
+* `repeat`: Repeats the audio snippet that was last played.
+* `quit`: Quits the utility.
+* `help`: Displays available commands.
+  
 ### Dependencies
 
 * This utility is written in **Python 2.7.**

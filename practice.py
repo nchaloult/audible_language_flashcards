@@ -43,14 +43,14 @@ def processCommand(command, answersAsList, mp3Paths, file):
     elif command == 'quit':
         sys.exit()
     elif command == 'help':
-        print 'Audible Language Flashcards\n\n'                                \
+        print '\nAudible Language Flashcards\n\n'                                \
                 + 'Available Commands:\n'                                      \
-                + '\tskip:\tSkips the current audio snippet, and reveals '     \
+                + '\tskip:\tSkips the audio snippet last played, and reveals ' \
                 + 'all acceptable answers for that snippet.\n'                 \
-                + '\trepeat:\tRepeats the current audio snippet.\n'            \
+                + '\trepeat:\tRepeats the audio snippet that was last '        \
+                + 'played.\n'                                                  \
                 + '\tquit:\tQuits the utility.\n'                              \
-                + '\thelp:\tDisplays information about this utility, along '   \
-                + 'with instructions for using it.\n\n'                        \
+                + '\thelp:\tDisplays available commands.\n\n'                  \
                 + 'The last audio snippet has been repeated. To hear it '      \
                 + 'again, use the \'repeat\' command.'
         mp3Paths.append(file)

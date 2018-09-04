@@ -5,10 +5,8 @@ import sys
 import time
 
 """
-
 Traverses through the user's file system, beginning from the current directory,
 and returns a list of local paths to each .mp3 file found.
-
 """
 def findmp3s():
     output = []
@@ -27,12 +25,11 @@ def findmp3s():
                 output.append(prefix + file)
 
     return output
-"""
 
+"""
 Executes the command that the user has provided.
 
 Any response from the user that begins with a '.' is interpreted as a command.
-
 """
 def processCommand(command, answersAsList, mp3Paths, file):
     if command == 'skip':
@@ -61,7 +58,6 @@ def processCommand(command, answersAsList, mp3Paths, file):
         time.sleep(1)
 
 """
-
 Compares the user's response with the correct answer for the audio file that
 has just been played, and tells the user if their response was correct. The
 correct answer for an audio clip is the name of that audio file, or any of the
@@ -69,7 +65,6 @@ words in the audio file's name that are separated by underscores.
 
 If their response is incorrect, that audio file is pushed back onto the top of
 the stack so that the user may try to translate that same audio clip again.
-
 """
 def processGuess(guess, answersAsList, mp3Paths, file):
     if guess in answersAsList:
@@ -85,12 +80,10 @@ def processGuess(guess, answersAsList, mp3Paths, file):
         time.sleep(1)
 
 """
-
 Returns a String containing the correct answer, or all possible correct answers
 separated by commas, for the audio clip that was just played.
 
 Removes brackets and single-quote marks from str(answersAsList).
-
 """
 def prettifyAnswer(answersAsList):
     return str(answersAsList)[1:-1].replace('\'', '')

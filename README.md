@@ -29,6 +29,6 @@ When prompted to type a guess, precede your response with a "." to invoke one of
 * This utility is written in **Python 2.7.**
 * Uses the [`playsound`](https://pypi.org/project/playsound/) module.
 
-## Backstory
+## Motivation
 
 While studying a foreign language in college, I was searching for an effective and entertaining way to learn new vocabulary. I was tired of flashcards, and I wanted a solution that involved audible comprehension of the language, since I was getting enough reading and writing practice from the assignments for the course. As each new unit arrived, my instructor provided students with recordings of themself saying each new word or phrase in the foreign language, but I wasn't sure how to study with these. Manually playing each recording wasn't helping me learn, because I already knew the translation of the audio file that I was about to play --- it was in the audio file's name. I needed something that would play each audio file in a random order, and not reveal the translation to me until I had made a guess. I also wanted to be able to organize the audio files by which unit they were a part of. This situation of mine led to the creation of this utility.
